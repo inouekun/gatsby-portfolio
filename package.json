@@ -1,11 +1,14 @@
 {
   "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "name": "kusyafiq-portfolio",
+  "description": "Ku Syafiq's Portfolio",
   "version": "0.2.9",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": {
+    "name": "Ku Mohd Syafiq",
+    "email": "kumsyafiq@gmail.com",
+    "url": "https://kusyafiq.com"
+  },
   "license": "0BSD",
-  "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
