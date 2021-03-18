@@ -1,15 +1,27 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // Of course you can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `Ku Syafiq - About`,
+    // Default title of the page
+    siteTitleAlt: `Ku Syafiq - About`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `Ku Syafiq - About`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://me.kusyafiq.com`,
+    // Used for SEO
+    siteDescription: `Ku Syafiq's Portfolio`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@kusyafiq`,
   },
   plugins: [
     {
@@ -26,9 +38,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Ku Syafiq - About`,
+        short_name: `KuSyafiq`,
+        description: `Ku Syafiq's Portfolio`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
@@ -59,4 +71,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
